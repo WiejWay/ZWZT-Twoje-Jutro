@@ -1,0 +1,56 @@
+.team-img{
+    width: 27%;
+    margin: auto;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.team-img2{
+    width: 20%;
+    margin: auto;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.ml-5{
+    margin-left: 5px;
+}
+h6{
+    font-size: 13.5px;
+    line-height: 14px;
+    margin-bottom: 0px;
+   font-weight: 700;
+}
+.lider{
+    font-size: 16px;
+    font-weight: 800;
+    
+}
+.lider-tag{
+    width: 100%;
+    text-align: left;
+    font-size: 17px;
+    
+}
+.fraction{
+    font-size: 11.5px;
+    font-weight: 600;
+}
+.spot .fraction{
+    font-size: 13.5px;
+    font-weight: 700;
+    margin-bottom: 0;
+    display: none;
+}
+.w-col-3 {
+    width: 30%;
+}
+.w-col-9 {
+    width: 70%;
+}
+.grey-rule2{
+    width: 80%;
+}
+.team-description{
+    margin-top: 0px;
+}
