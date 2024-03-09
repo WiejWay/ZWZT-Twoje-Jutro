@@ -48,15 +48,16 @@ const contents = [
     <body>
         <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation-bar w-nav">
             <div class="w-container">
-                <a href="/" class="w-nav-brand">
+                <a href="https://zwolnienizteorii.pl/a/#/app/project-details/1050262" target="_blank" class="w-nav-brand">
                     <div class="site-name">Twoje Jutro</div>
                 </a>
                 <nav role="navigation" class="navigation-menu w-nav-menu">
-                    <a href="/" class="navigation-link w-nav-link">Info</a>
-                    <a href="/contact" class="navigation-link w-nav-link">Kontakt</a>
+                    <a href="https://zwolnienizteorii.pl/" class="navigation-link w-nav-link"><img class="team-img3 w-inline-block" src="https://zwolnienizteorii.pl/sfbuild/images/tpl/navbar/zwzt_logo.ec3df6d7.svg" alt="Zdjęcie Sponsora projektu"></a>
+                    
                 </nav>
                 <div class="menu-button w-nav-button">
-                    <div class="w-icon-nav-menu"></div>
+                    <a href="https://zwolnienizteorii.pl/" class="navigation-link w-nav-link"><img class="team-img3 w-inline-block" src="https://zwolnienizteorii.pl/sfbuild/images/tpl/navbar/zwzt_logo.ec3df6d7.svg" alt="Zdjęcie Sponsora projektu"></a>
+                 
                 </div>
             </div>
         </div>
@@ -159,22 +160,21 @@ const contents = [
                             <script>
                                 const sponsors = [
                                 
-                              {nazwa: '', nazwa2: '', imageUrl: 'https://kraftbox.pl/wp-content/uploads/2021/04/KraftBox_s.png' },
-                              {nazwa: '', nazwa2: '', imageUrl: 'https://i0.wp.com/reklama-traper.pl/wp-content/uploads/2021/11/traperlogo.png?resize=300%2C86&ssl=1' },
+                              {link: "https://kraftbox.pl/", imageUrl: 'https://kraftbox.pl/wp-content/uploads/2021/04/KraftBox_s.png' },
+                              {link: "https://reklama-traper.pl/", imageUrl: 'https://i0.wp.com/reklama-traper.pl/wp-content/uploads/2021/11/traperlogo.png?resize=300%2C86&ssl=1' },
                               ];
                               const partners = [
                                 
-                                {nazwa: '', nazwa2: '', imageUrl: 'http://pz10.eu/wp-content/uploads/2021/10/LogoKopernik.png' },
-                                {nazwa: '', nazwa2: '', imageUrl: 'https://scontent.fktw4-1.fna.fbcdn.net/v/t39.30808-6/294589149_591134302571029_2738904257027538276_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kemyu5jLRf8AX-eEVIv&_nc_ht=scontent.fktw4-1.fna&oh=00_AfBzX1Klf8ybYwIj6s1NnvfgPQMmBmnlPgKrPfVdOVKKhg&oe=65F1F7F5' },
+                                {link: "http://pz10.eu/", imageUrl: 'http://pz10.eu/wp-content/uploads/2021/10/LogoKopernik.png' },
+                                {link: "https://www.szkoly.bielsko.zdz.pl/", imageUrl: 'https://scontent.fktw4-1.fna.fbcdn.net/v/t39.30808-6/294589149_591134302571029_2738904257027538276_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kemyu5jLRf8AX-eEVIv&_nc_ht=scontent.fktw4-1.fna&oh=00_AfBzX1Klf8ybYwIj6s1NnvfgPQMmBmnlPgKrPfVdOVKKhg&oe=65F1F7F5' },
                                 ];
                           </script>
                             <script>function generatesponsorsHTML(sponsors) {
                                 return `
                                     <div role="listitem" class="w-dyn-item">
                                     <b style="color: purple;" class="w-block"></b>
-                                    <img class="team-img3 w-inline-block" src="${sponsors.imageUrl}" alt="Zdjęcie Sponsora projektu">
-                                    <h6 class="w-inline-block ml-5">${sponsors.nazwa} ${sponsors.nazwa2}
-                                    
+                                    <a href="${sponsors.link}" target="_blank"><img class="team-img3 w-inline-block" src="${sponsors.imageUrl}" alt="Zdjęcie Sponsora projektu"></a>
+                                   
                                         </div>
                                         `;
                                     }
@@ -182,9 +182,8 @@ const contents = [
                                 return `
                                     <div role="listitem" class="w-dyn-item">
                                     <b style="color: purple;" class="w-block"></b>
-                                    <img class="team-img4 w-inline-block" src="${sponsors.imageUrl}" alt="Zdjęcie Partnera projektu">
-                                    <h6 class="w-inline-block ml-5">${sponsors.nazwa} ${sponsors.nazwa2}
-                                    
+                                    <a href="${sponsors.link}" target="_blank"><img class="team-img4 w-inline-block" src="${sponsors.imageUrl}" alt="Zdjęcie Partnera projektu"></a>
+                                   
                                         </div>
                                         `;
                                     }
