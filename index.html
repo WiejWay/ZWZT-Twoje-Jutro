@@ -204,7 +204,108 @@ const contents = [
                     </div>
                     
                     <div class="content-column w-col w-col-9">
-                        <h1 class="white-bg-heading">Działania Projektu</h1>
+                        
+                        <div class="sidebar-on-mobile">
+                            <div class="white-wrapper">
+                                <img src="https://ocs-pl.oktawave.com/v1/AUTH_56a2c5c9-d591-4505-ab03-12e04199e37e/socialwolves/img/thumbnails/120x120/79/7977448b54d6c292380bfb2fa34090ed.jpg" alt="" class="circle-profile"/>
+                                <p class="site-description"><b>Najlepsi w reklamie!</b></p>
+                                <div class="grey-rule"></div>
+                                <h2 class="small-heading">Cel projektu</h2>
+                                <div class="feature-posts-list w-dyn-list">
+                                    <div role="list" class="w-dyn-items">
+                                        <div role="listitem" class="w-dyn-item">
+                                            <p class="small-post-link inte-n">1. Uświadomienie młodych o marnowaniu czasu</p>
+                                        </div>
+                                        <div role="listitem" class="w-dyn-item">
+                                            <p class="small-post-link inte-n">2. Walka z marnowaniem zywnosci w domach</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grey-rule"></div>
+                                <div class="social-link-group">
+                                    <a href="https://www.tiktok.com/@twoje.jutroo?_t=8kXcejBPoGn&_r=1" class="social-icon-link w-inline-block" target="_blank">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/3046/3046115.png"  width="25" alt=""/>
+                                    </a>
+                                    <a href="https://www.instagram.com/twoje.jutroo/" class="social-icon-link w-inline-block" target="_blank">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384156.png" width="25" alt=""/>
+                                    </a>
+                                </div>
+                                <p class="built-with-webflow">
+                                    Nasze Sociale</a>
+                                </p>
+                            </div>
+                            <div class="white-wrapper" style="margin-top: 30px;">
+                                <h2 class="site-description team-description">Nasz Zespół</h2>
+                                <div class="grey-rule"></div>
+                                <div class="feature-posts-list w-dyn-list">
+                                    <div role="list" class="w-dyn-items" id="participants-list2">
+                                        <div role="listitem" class="w-dyn-item">
+                                            <b style="color: purple; " class="w-block">Lider Projektu</b>
+                                            <img class="team-img w-inline-block" src="https://ocs-pl.oktawave.com/v1/AUTH_56a2c5c9-d591-4505-ab03-12e04199e37e/socialwolves/img/thumbnails/120x120/d0/d030d037039fd7636a8e2f7727a8bb82.jpeg" alt="Zdjęcie lidera projektu">
+                                            <h4 class="w-inline-block ml-10">Jakub Wieja</h4>
+                                        </div>
+                                        <div class="grey-rule"></div>
+                                    </div>
+                                </div>
+                                
+                                <script>function generateParticipantHTML2(participant) {
+                                    return `
+                                    <div role="listitem" class="w-dyn-item">
+                                        <b style="color: purple;" class="w-block"></b>
+                                        <img class="team-img2 w-inline-block" src="${participant.imageUrl}" alt="Zdjęcie członka projektu">
+                                        <h6 class="w-inline-block ml-5">${participant.firstName} ${participant.lastName}
+                                            <br><b style="color:purple" class="fraction">${participant.fraction}</b></h6>
+                                            </div>
+                                            `;
+                                        }
+                                        
+                                        // Pobierz kontener listy uczestników
+                                        const participantsListContainer2 = document.getElementById('participants-list2');
+                                        
+                                        // Wykorzystaj funkcję map do generowania HTML dla każdego uczestnika
+                                        const participantsHTML2 = participants.map(generateParticipantHTML2);
+                                        
+                                        // Dodaj wygenerowane elementy do kontenera
+                                        participantsListContainer2.innerHTML = ` <div role="listitem" class="w-dyn-item">
+                                            <b style="color: purple; " class="w-block lider-tag">Lider Projektu</b>
+                                            <img class="team-img w-inline-block" src="https://ocs-pl.oktawave.com/v1/AUTH_56a2c5c9-d591-4505-ab03-12e04199e37e/socialwolves/img/thumbnails/120x120/d0/d030d037039fd7636a8e2f7727a8bb82.jpeg" alt="Zdjęcie lidera projektu">
+                                            <h4 class="w-inline-block ml-5 lider">Jakub Wieja</h4>
+                                            <h4 class="w-inline-block ml-5 spot"><b style="color:purple" class="fraction">Programista WWW, Organizacja</b></h4>
+                                            </div>
+                                            <div class="grey-rule2 grey-rule"></div>`+participantsHTML2.join('');  
+                                            </script>
+                                
+                                
+                            </div>
+                            <div class="white-wrapper" style="margin-top: 30px;">
+                                <h2 class="site-description team-description">Sponsorzy</h2>
+                                <div class="grey-rule grey-rule3"></div>
+                                <div class="feature-posts-list w-dyn-list">
+                                    <div role="list" class="w-dyn-items" id="sponsors-list2">
+                                        
+                                        <div class="grey-rule"></div>
+                                    </div>
+                                </div>
+                                <script>
+                                    
+                                </script>
+                                <script>
+                                    // Pobierz kontener listy uczestników
+                                    const sponsorssListContainer2 = document.getElementById('sponsors-list2');
+                                    
+                                    // Wykorzystaj funkcję map do generowania HTML dla każdego uczestnika
+                                    const sponsorssHTML2 = sponsors.map(generatesponsorsHTML);
+                                    const partnersHTML2 = partners.map(generatepartnersHTML);
+                                    
+                                    // Dodaj wygenerowane elementy do kontenera
+                                    sponsorssListContainer2.innerHTML = sponsorssHTML2.join('')+ ' <h2 class="site-description team-description">Partnerzy</h2><div class="grey-rule3 grey-rule" style="margin-top:0"></div>' + partnersHTML.join('');  
+                                    </script>
+                                
+                                
+                            </div>
+                        </div>
+                        
+                        <h1 class="white-bg-heading mt-30">Działania Projektu</h1>
                         <div class="w-dyn-list">
                             <div role="list" class="w-dyn-items" id="w-dyn-items">
                                 <div role="listitem" class="w-dyn-item">
@@ -275,37 +376,6 @@ const contents = [
                                 
                             </script>
                         </div>
-                        <div class="sidebar-on-mobile">
-                            <div class="white-wrapper">
-                                <img src="https://ocs-pl.oktawave.com/v1/AUTH_56a2c5c9-d591-4505-ab03-12e04199e37e/socialwolves/img/thumbnails/120x120/79/7977448b54d6c292380bfb2fa34090ed.jpg" alt="" class="circle-profile"/>
-                                <p class="site-description">Denali is a simple responsive blog template. Easily add new posts using the Editor or change layout and design using the Designer.</p>
-                                <div class="grey-rule"></div>
-                                <h2 class="small-heading">Featured Posts:</h2>
-                                <div class="feature-posts-list w-dyn-list">
-                                    <div role="list" class="w-dyn-items">
-                                        <div role="listitem" class="w-dyn-item">
-                                            <a href="/posts/half-and-half-variety-milk-viennese-body-cappuccino" class="small-post-link">According a funnily until pre-set or arrogant well cheerful</a>
-                                        </div>
-                                        <div role="listitem" class="w-dyn-item">
-                                            <a href="/posts/steamed-siphon-froth-mazagran-cafe-au-lait" class="small-post-link">Overlaid the jeepers uselessly much excluding</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grey-rule"></div>
-                                <div class="social-link-group">
-                                    <a href="https://www.tiktok.com/@twoje.jutroo?_t=8kXcejBPoGn&_r=1" class="social-icon-link w-inline-block">
-                                        <img src="https://assets.website-files.com/5e4b1a54e48aed761d1ff229/5e4b1a54e48aed39811ff2c6_social-03.svg" width="25" alt=""/>
-                                    </a>
-                                    <a href="https://www.instagram.com/twoje.jutroo/" class="social-icon-link w-inline-block">
-                                        <img src="https://assets.website-files.com/5e4b1a54e48aed761d1ff229/5e4b1a54e48aed1ad11ff2da_social-07.svg" width="25" alt=""/>
-                                    </a>
-                                   
-                                </div>
-                                <p class="built-with-webflow">
-                                    Built with <a target="_blank" href="https://webflow.com" class="webflow-link">Webflow</a>
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -314,4 +384,5 @@ const contents = [
         <script src="https://assets.website-files.com/5e4b1a54e48aed761d1ff229/js/webflow.bf6a5095c.js" type="text/javascript"></script>
         
     </body>
-</html>
+    </html>
+    
