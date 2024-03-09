@@ -140,6 +140,9 @@ a:has(.site-name){
     width: 100%;
 
 }
+.details-wrapper{
+    margin: 0;
+}
 @media screen and (max-width: 767px) {
     .team-img{
         width: 17%;
